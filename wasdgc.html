@@ -16,7 +16,7 @@
 body {
   /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.5;
   text-align: center;
   color: #333;
@@ -38,13 +38,14 @@ img {
    background-color: grey;
  }  
 #img-div {
-  border-radius: .8em;
-  background: 	#EEEEEE;
-  padding: 40px;
-  margin-left: 500px;
-  margin-right: 500px;
-  box-shadow: -14px -14px 14px 0 rgba(255,255,255,1),
-    14px 14px 14px 0 rgba(0,0,0,.03);
+  display: flex;
+  padding: 20px;
+  font-size: 30px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  margin: auto auto;
 }
 
 #img-caption {
@@ -52,18 +53,16 @@ img {
 }
 
 blockquote {
-  border-radius: .8em;
+  border-width: ;
   border-color: white;
   border-width: thin;
   font-style: italic;
-  font-size: 1.25em;
+  font-size: .5em;
   max-width: 400px;
   margin: 0 auto 0px auto;
   text-align: left;
   margin-top: 50px;
   padding: 30px;
-  box-shadow: inset -12px -12px 12px 0 rgba(255,255,255,1),
-    inset 12px 12px 12px 0 rgba(0,0,0,.03)
 }
 h3{
   text-align:center;
@@ -127,7 +126,7 @@ h3{
   width: 100%;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .product > h2 {
@@ -201,9 +200,15 @@ h3{
   color: white;
 }
 
+.map-header {
+  background-color: black;
+  color: white;
+}
     </style>
 </head>
 <main id="main"> 
+
+  <!--Navigation bar stuff-->
   <div class="topnav">
     <a href="/index.html">ComuniWASD</a>
     <a class="active" href="#news">WASD Gaming Center</a>
@@ -211,30 +216,15 @@ h3{
     <a href="#about">Eventos</a>
     <a href="#contacto">Contacto</a>
   </div>
-
+<!--Navigation bar stuff-->
     <h1 id="title"> WASD Gaming Center  </h1>
-    <p>Aquí podrás obtener información acerca de nuestros servicios e instalaciones.</p>
-    <figure id="img-div">
-      <img
-        id="image"
-        src="https://static.wixstatic.com/media/80dfe1_82d8af700c484a10be70afa97651069a~mv2.png/v1/fill/w_449,h_402,al_c,q_85,usm_1.20_1.00_0.01/80dfe1_82d8af700c484a10be70afa97651069a~mv2.webp"
-        alt="Imagen random tomada de internets" />
-      <figcaption id="img-caption">
-      </figcaption>
-    </figure>
-    <blockquote>
-    <p>"Nuestro sistema maneja cuentas de usuario. Compras paquetes de horas y al venir a jugar se te agregan esas horas a tu cuenta y te las puedes gastar como tu quieras." - Miriam Rodríguez, administradora.</p>
-    </blockquote>
-
-<h2>Síguenos en nuestras redes sociales</h2>
-
-<!-- Add font awesome icons -->
-<a href="https://www.facebook.com/WASD.Gaming" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="https://www.youtube.com/channel/UCCRoiTWifwqdfYbuzyJz_4g" class="fa fa-youtube"></a>
-<a href="#" class="fa fa-instagram"></a>
+    <!--Video-->
+    <section id="how-it-works">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/42DVjFo7IwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <!--Video end-->
     <!--Comienza info de Slider-->
-<h2 class="w3-center">Manual Slideshow</h2>
+<h2 class="w3-center">Ven, juega y diviértete</h2>
 
 <div class="w3-content w3-display-container">
   <img class="mySlides" src="https://static.wixstatic.com/media/80dfe1_1d0ada6ebdd44690bea66f7a33361ce3~mv2.jpg" style="width:100%">
@@ -270,49 +260,64 @@ function showDivs(n) {
     <section id="pricing">
       <div class="product" id="tenor">
         <div class="level">Invitados</div>
-        <h2>MXN 15 por hora</h2>
+        <h2>$15 por hora</h2>
         <ol>
-          <li>Juega pre-pago o pos pago.</li>
+          <li>Juega pre-pago o pos-pago.</li>
           <li>Participa en eventos y torneos.</li>
           <li>La fracción es cada media hora.</li>
           <li>El costo por media hora es de $8.</li>
         </ol>
-        <button class="btn">Select</button>
-      </div>
+            </div>
       <div class="product" id="bass">
         <div class="level">Usuario registrado</div>
         <h2>Obtén descuentos al comprar paquetes de tiempo que se agregan a tu cuenta</h2>
         <ol>
-          <li>Paquete de 6 horas: $60 - 
+          <p>Paquete de 6 horas: $60 - 
             ($10/hora)
-          </li>
-          <li>Paquete de 9 horas: $85 - 
-            ($9.44/hora) </li>
-          <li>Paquete de 14 horas: $115 - 
+          </p>
+          <p>Paquete de 9 horas: $85 - 
+            ($9.44/hora) </p>
+          <p>Paquete de 14 horas: $115 - 
             ($8.21/hora)
-          </li>
-          <li>Paquete de 28 horas: $200 - 
+          </p>
+          <p>Paquete de 28 horas: $200 - 
             ($7.14/hora)
-          </li>
+          </p>
           <h2>Costo de registro: $20</h2>
           <h4>(incluye 1 hora gratis)</h4>
         </ol>
-        <button class="btn">Select</button>
-      </div>
+            </div>
       <div class="product" id="valve"><div class="level"><i class="em em-dark_sunglasses" aria-role="presentation" aria-label=""></i> pro wasder <i class="em em-dark_sunglasses" aria-role="presentation" aria-label=""></i></div>
-        <h2>Para nuestros gamers aferrados</h2>
+        <h2>Para nuestros gamers de corazón</h2>
         <ol>
-          <li>Obtienes acceso a la zona preferencial, la cual cuenta con equipos más avanzados.</li>
-          <li>Ganas el derecho a reservar tu PC anticipadamente</li>
-          <li></li>
-          <li>Lorem ipsum.</li>
+          <p>Paquete de 6 horas: $70 - 
+            ($11.66/hora)
+          </p>
+          <p>Paquete de 9 horas: $95 - 
+            ($10.55/hora) </p>
+          <p>Paquete de 14 horas: $130 - 
+            ($9.28/hora)
+          </p>
+          <p>Paquete de 28 horas: $225 - 
+            ($8.03/hora)
+          </p>
+          <h2>Costo de registro: $30</h2>
+          <h4>(incluye 2 horas)</h4>
+          <p>Obtienes acceso a la zona preferencial, la cual cuenta con equipos más avanzados.</p>
+          <p>Ganas el derecho a reservar tu PC anticipadamente</p>
+          <p>Recibes descuentos en la compra de bebidas y snacks</p>
         </ol>
-        <button class="btn">Select</button>
       </div>
     </section>
-
-
-    <h3>¡Encuéntranos con Google Maps!</h3>
+<!-- inicio redes sociales -->
+<a href="https://www.facebook.com/WASD.Gaming" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="https://www.youtube.com/channel/UCCRoiTWifwqdfYbuzyJz_4g" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<!--fin redes sociales-->
+<div class="map-header">
+    <h3 class="map-header-text">¡Encuéntranos con Google Maps!</h3>
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15040.24422562147!2d-96.9231644!3d19.5389921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x945ad368200af9f!2sWASD%20Gaming%20Center!5e0!3m2!1ses-419!2ses!4v1578101405497!5m2!1ses-419!2ses" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" id="mapa"></iframe>
-  </main>
+</div>  
+</main>
   
