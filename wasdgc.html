@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -100,6 +100,72 @@ h3{
   color: white;
 }
 
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+.mySlides {display:none;}
+
     </style>
 </head>
 <main id="main"> 
@@ -122,7 +188,7 @@ h3{
       </figcaption>
     </figure>
     <blockquote>
-    <p>"WASD es un centro de entretenimiento para personas que desean jugar videojuegos de PC en alta calidad ya que contamos con potentes tarjetas gráficas de la familia GTX de Nvidia Geforce."   - Edwin Estrada, propietario.</p>
+    <p>"Nuestro sistema maneja cuentas de usuario. Compras paquetes de horas y al venir a jugar se te agregan esas horas a tu cuenta y te las puedes gastar como tu quieras." - Miriam Rodríguez, administradora.</p>
     </blockquote>
     
   <h3>
@@ -134,6 +200,85 @@ h3{
           >Página de Facebook</a
         >.
     </h3>
+    <!--Comienza info de Slider-->
+<h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://static.wixstatic.com/media/80dfe1_1d0ada6ebdd44690bea66f7a33361ce3~mv2.jpg" style="width:100%">
+  <img class="mySlides" src="https://scontent-mad1-1.xx.fbcdn.net/v/t31.0-0/p640x640/15800770_592872310905175_6722097915988543387_o.jpg" style="width:100%">
+  <img class="mySlides" src="img_mountains.jpg" style="width:100%">
+  <img class="mySlides" src="img_forest.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<!--Termina info de slider-->
+
+    <section id="pricing">
+      <div class="product" id="tenor">
+        <div class="level">Invitados</div>
+        <h2>MXN 15 por hora</h2>
+        <ol>
+          <li>Juega pre-pago o pos pago.</li>
+          <li>Participa en eventos y torneos.</li>
+          <li>La fracción es cada media hora.</li>
+          <li>El costo por media hora es de $8.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="bass">
+        <div class="level">Usuario registrado</div>
+        <h2>Obtén descuentos al comprar paquetes de tiempo que se agregan a tu cuenta</h2>
+        <ol>
+          <li>Paquete de 6 horas: $60 - 
+            ($10/hora)
+          </li>
+          <li>Paquete de 9 horas: $85 - 
+            ($9.44/hora) </li>
+          <li>Paquete de 14 horas: $115 - 
+            ($8.21/hora)
+          </li>
+          <li>Paquete de 28 horas: $200 - 
+            ($7.14/hora)
+          </li>
+          <h2>Costo de registro: $20</h2>
+          <h4>(incluye 1 hora gratis)</h4>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="valve"><div class="level"><i class="em em-dark_sunglasses" aria-role="presentation" aria-label=""></i> pro wasder <i class="em em-dark_sunglasses" aria-role="presentation" aria-label=""></i></div>
+        <h2>Para nuestros gamers aferrados</h2>
+        <ol>
+          <li>Obtienes acceso a la zona preferencial, la cual cuenta con equipos más avanzados.</li>
+          <li>Ganas el derecho a reservar tu PC anticipadamente</li>
+          <li></li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+
+
     <h3>¡Encuéntranos con Google Maps!</h3>
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15040.24422562147!2d-96.9231644!3d19.5389921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x945ad368200af9f!2sWASD%20Gaming%20Center!5e0!3m2!1ses-419!2ses!4v1578101405497!5m2!1ses-419!2ses" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" id="mapa"></iframe>
   </main>
