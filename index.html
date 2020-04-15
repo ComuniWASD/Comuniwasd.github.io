@@ -19,9 +19,9 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   text-align: center;
-  color: #333;
+  color: #008f11;
   margin: 0;
-  background: #EEEEEE;
+  background: #000000;
 }
 
 img {
@@ -100,12 +100,22 @@ h3{
   background-color: #1285E9;
   color: white;
 }
+.w3-content {
+  justify-content: center;
+}
+
+.w3-button{
+  height: 2em;
+  width: 2em;
+  font-size: 30px;
+}
 
 #pricing {
   margin-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background: rgb(100, 0, 170);
 }
 
 .product {
@@ -120,7 +130,7 @@ h3{
 }
 
 .product > .level {
-  background-color: rgb(114, 193, 238);
+  background-color: rgb(90, 10, 110);
   color: black;
   padding: 15px 0;
   width: 100%;
@@ -165,7 +175,9 @@ h3{
   }
 }
 
-.mySlides {display:none;}
+.mySlides {
+  display:none;
+}
 
 .fa {
   padding: 20px;
@@ -230,14 +242,14 @@ h3{
     <!--Comienza info de Slider-->
 <h2 class="w3-center">Ven, juega y diviértete</h2>
 
-<div class="w3-content w3-display-container">
+<div class="w3-content">
   <img class="mySlides" src="https://static.wixstatic.com/media/80dfe1_1d0ada6ebdd44690bea66f7a33361ce3~mv2.jpg" style="width:100%">
   <img class="mySlides" src="WASD Slider 2.jpg" style="width:100%">
   <img class="mySlides" src="WASD 1.jpg" style="width:100%">
   <img class="mySlides" src="WASD 2 slide 4.jpg" style="width:100%">
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  <button class="w3-button" onclick="plusDivs(-1)">&leftarrow;</button>
+  <button class="w3-button" onclick="plusDivs(1)">&rightarrow;</button>
 </div>
 
 <script>
