@@ -1,13 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <script data-ad-client="ca-pub-4243375765834454" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ComuniWASD</title>
     <style>
-    
+    html {
+  font-size: 10px;
+}
+
+body {
+  /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+  background: #EEEEEE;
+}
+
+img {
+  
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  object-fit: center;
+}
+#mapa {
+   width: 100%;
+   height: 400px;
+   background-color: grey;
+ }  
+#img-div {
+  display: flex;
+  padding: 20px;
+  font-size: 30px;
+  width: auto;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  margin: auto auto;
+}
+
+#img-caption {
+  color: black;
+}
+
+blockquote {
+  border-width: ;
+  border-color: white;
+  border-width: thin;
+  font-style: italic;
+  font-size: .5em;
+  max-width: 400px;
+  margin: 0 auto 0px auto;
+  text-align: left;
+  margin-top: 50px;
+  padding: 30px;
+}
+h3{
+  text-align:center;
+  width: 100%;
+  padding:30px 0;
+  margin:0;
+  box-shadow: 0 1em 1em -1em rgba(0, 0, 0, .25)
+}
+  
+.box {
+  display: flex;
+}
+
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -31,67 +100,227 @@
   background-color: #1285E9;
   color: white;
 }
-.dropbtn {
-  background-color: #333333;
-  color: white;
-  padding: 14px 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: relative;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 2;   
+.product > .level {
+  background-color: rgb(114, 193, 238);
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2rem;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+.mySlides {display:none;}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
   text-decoration: none;
-  display: block;
+  margin: 5px 2px;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+.fa:hover {
+    opacity: 0.7;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #333333;
+.fa-facebook {
+  background: #3B5998;
+  color: white;
 }
 
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
 
-</style>
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.map-header {
+  background-color: black;
+  color: white;
+}
+    </style>
 </head>
-<body>
-    <main id="main"> 
-        <div class="topnav">
-          <a class="active"href="/index.html">ComuniWASD</a>
-          <a href="/wasdgc.html">WASD Gaming Center</a>
-          
-    <!--  <a href="#contact">Noticias</a>
+<main id="main"> 
+
+  <!--Navigation bar stuff-->
+  <div class="topnav">
+
+    <a class="active" href="/index.html">WASD Gaming Center</a>
+    <a href="/comuniwasd.html">ComuniWASD</a>
+
+  
+  <!--  <a href="#contact">Noticias</a>
     <a href="#about">Eventos</a>
     <a href="#contacto">Contacto</a>
-    -->
-        </div>
-    <h1>Bienvenido a ComuniWASD</h1>
-    Únete a nuestro grupo de Facebook dando click <a href="https://www.facebook.com/ComuniWASD" id="fbg-link" target="_blank">aquí</a>.
-</body>
-</html>
+  -->
+  </div>
+<!--Navigation bar stuff-->
+    <h1 id="title"> WASD Gaming Center  </h1>
+    <!--Video-->
+    <section id="how-it-works">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/42DVjFo7IwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <!--Video end-->
+    <!--Comienza info de Slider-->
+<h2 class="w3-center">Ven, juega y diviértete</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://static.wixstatic.com/media/80dfe1_1d0ada6ebdd44690bea66f7a33361ce3~mv2.jpg" style="width:100%">
+  <img class="mySlides" src="WASD Slider 2.jpg" style="width:100%">
+  <img class="mySlides" src="WASD 1.jpg" style="width:100%">
+  <img class="mySlides" src="WASD 2 slide 4.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<!--Termina info de slider-->
+
+    <section id="pricing">
+      <div class="product" id="tenor">
+        <div class="level">Invitados</div>
+        <h2>$15 por hora</h2>
+        <ol>
+          <li>Juega pre-pago o pos-pago.</li>
+          <li>Participa en eventos y torneos.</li>
+          <li>La fracción es cada media hora.</li>
+          <li>El costo por media hora es de $8.</li>
+        </ol>
+            </div>
+      <div class="product" id="bass">
+        <div class="level">ZONA GENERAL</div>
+        <h2>Obtén descuentos al comprar paquetes de tiempo que se añaden a tu cuenta</h2>
+        <ol>
+          <p>Paquete de 6 horas: $60 - 
+            ($10/hora)
+          </p>
+          <p>Paquete de 9 horas: $85 - 
+            ($9.44/hora) </p>
+          <p>Paquete de 13 horas: $115 - 
+            ($8.84/hora)
+          </p>
+          <p>Paquete de 25 horas: $200 - 
+            ($8/hora)
+          </p>
+          <h2>REGISTRO GRATIS</h2>
+          <h4>(en la compra de tu primer paquete de tiempo, incluye 1 hora extra)</h4>
+        </ol>
+            </div>
+      <div class="product" id="valve"><div class="level"><i class="em em-dark_sunglasses" aria-role="presentation" aria-label=""></i> ZONA A <i class="em em-dark_sunglasses" aria-role="presentation" aria-label=""></i></div>
+        <h2>Para los más gamers.</h2>
+        <ol>
+          <p>Paquete de 6 horas: $70 - 
+            ($11.66/hora)
+          </p>
+          <p>Paquete de 9 horas: $100 - 
+            ($11.11/hora) </p>
+          <p>Paquete de 13 horas: $135 - 
+            ($10.38/hora)
+          </p>
+          <p>Paquete de 25 horas: $230 - 
+            ($9,2/hora)
+          </p>
+          <h2>REGISTRO GRATIS</h2>
+          <h4>(en la compra de tu primer paquete de tiempo, incluye 1 hora extra)</h4>
+          <p>Obtienes acceso a la zona A, la cual cuenta con equipos más avanzados.</p>
+          <p>Tienes derecho a reservar tu PC</p>
+        </ol>
+      </div>
+    </section>
+<!-- inicio redes sociales -->
+<a href="https://www.facebook.com/WASD.Gaming" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="https://www.youtube.com/channel/UCCRoiTWifwqdfYbuzyJz_4g" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<!--fin redes sociales-->
+<div class="map-header">
+    <h3 class="map-header-text">¡Encuéntranos con Google Maps!</h3>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15040.24422562147!2d-96.9231644!3d19.5389921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x945ad368200af9f!2sWASD%20Gaming%20Center!5e0!3m2!1ses-419!2ses!4v1578101405497!5m2!1ses-419!2ses" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" id="mapa"></iframe>
+</div>  
+</main>
+  
