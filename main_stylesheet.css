@@ -210,3 +210,12 @@ h3 {
   background-color: black;
   color: white;
 }
+
+.vids {
+  background: #008f11;
+  flex-wrap: wrap;
+}
+
+.vids-font {
+  color: #000000;
+}
