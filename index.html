@@ -1,81 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="stylesheet" type = "text/css" href="main_stylesheet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WASD Gaming Center - Entretenimiento de Calidad para Gamers Xalapeños</title>
+  <link rel="stylesheet" type="text/css" href="main_stylesheet.css">
   <script data-ad-client="ca-pub-1869273480527476" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<main id="main"> 
-
-  <!--Navigation bar start-->
-   <div class="topnav">
-    <a class="active" href="/index.html">WASDGamingCenter</a>
-    <a href="/reglamento.html">Reglamento</a>
-    <a href="/computadoras.html">Computadoras</a>
-    <a href="/comuniwasd.html">ComuniWASD</a>
+<body>
+  <!-- Status Banner -->
+  <div class="status-banner">
+    <p>WASD Gaming Center Current Status: OFF</p>
   </div>
-  <!--Navigation bar end-->
 
-  <!--Header start-->
-    <h1 id="title">>Bienvenidx al sitio web de WASD</h1>
-    <h2 id="title">Llevamos 5 años entregando
-                   entretenimiendo de calidad
-                   a los gamers xalapeños.</h2>
-  <!--Header end-->
-  <!--Videos start-->
+  <main id="main">
 
+    <!--Navigation bar start-->
+    <nav class="topnav">
+      <a class="active" href="/index.html">WASDGamingCenter</a>
+      <a href="/reglamento.html">Reglamento</a>
+      <a href="/computadoras.html">Computadoras</a>
+      <a href="/comuniwasd.html">ComuniWASD</a>
+      <div class="lang-toggle">
+        <button id="lang-es" class="lang-btn active">🇪🇸 ES</button>
+        <button id="lang-en" class="lang-btn">🇺🇸 EN</button>
+      </div>
+    </nav>
+    <!--Navigation bar end-->
+
+    <!--Header start-->
+    <header>
+      <h1 id="title" class="glitch" data-text=">Bienvenidx al sitio web de WASD">>Bienvenidx al sitio web de WASD</h1>
+      <h2 id="subtitle">Llevamos 5 años entregando entretenimiento de calidad a los gamers xalapeños.</h2>
+    </header>
+    <!--Header end-->
+
+    <!--Videos start-->
     <section class="vids">
-
-      <div id="vid-uno">
+      <div class="vid-container">
         <p class="vids-font">v Conoce nuestras instalaciones v</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/42DVjFo7IwY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div>
+      </div>
 
-      <div id="vid-dos">
+      <div class="vid-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/14R0pL-Pmyk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p class="vids-font">^ Primer aniversario ^</p>
       </div>
 
-      <div id="vid-tres">
+      <div class="vid-container">
         <p class="vids-font">v Segundo aniversario v</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/97losi2uf7g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
+    </section>
+    <!--Videos end-->
 
-      </section>
-  <!--Videos end-->
-  <!--Comienza info de Slider-->
-<h2 class="w3-center">Ven, juega y diviértete</h2>
+    <!--Slider start-->
+    <section class="slider-section">
+      <h2 class="w3-center">Ven, juega y diviértete</h2>
+      <div class="w3-content">
+        <img class="mySlides" src="https://static.wixstatic.com/media/80dfe1_1d0ada6ebdd44690bea66f7a33361ce3~mv2.jpg" alt="Instalaciones WASD" style="height:609px">
+        <img class="mySlides" src="WASD Slider 2.jpg" alt="Slider 2" style="height:609px">
+        <img class="mySlides" src="WASD 1.jpg" alt="WASD 1" style="height:609px">
+        <img class="mySlides" src="WASD 2 slide 4.jpg" alt="WASD 2 slide 4" style="height:609px">
 
-<div class="w3-content">
-  <img class="mySlides" src="https://static.wixstatic.com/media/80dfe1_1d0ada6ebdd44690bea66f7a33361ce3~mv2.jpg" style="height:609px">
-  <img class="mySlides" src="WASD Slider 2.jpg" style="height:609px">
-  <img class="mySlides" src="WASD 1.jpg" style="height:609px">
-  <img class="mySlides" src="WASD 2 slide 4.jpg" style="height:609px">
-
-  <button class="w3-button" onclick="plusDivs(-1)">&leftarrow;</button>
-  <button class="w3-button" onclick="plusDivs(1)">&rightarrow;</button>
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-<!--Termina info de slider-->
+        <button class="w3-button" onclick="plusDivs(-1)">&leftarrow;</button>
+        <button class="w3-button" onclick="plusDivs(1)">&rightarrow;</button>
+      </div>
+    </section>
+    <!--Slider end-->
 
     <section id="pricing">
       <div class="product" id="tenor">
@@ -87,40 +80,27 @@ function showDivs(n) {
           <li>La fracción es cada media hora.</li>
           <li>El costo por media hora es de $8.</li>
         </ol>
-            </div>
+      </div>
       <div class="product" id="bass">
         <div class="level">ZONA GENERAL</div>
         <h2>Obtén descuentos al comprar paquetes de tiempo que se añaden a tu cuenta</h2>
         <ol>
-          <p>Paquete de 6 horas: $60 - 
-            ($10/hora)
-          </p>
-          <p>Paquete de 9 horas: $85 - 
-            ($9.44/hora) </p>
-          <p>Paquete de 13 horas: $115 - 
-            ($8.84/hora)
-          </p>
-          <p>Paquete de 25 horas: $200 - 
-            ($8/hora)
-          </p>
+          <p>Paquete de 6 horas: $60 - ($10/hora)</p>
+          <p>Paquete de 9 horas: $85 - ($9.44/hora)</p>
+          <p>Paquete de 13 horas: $115 - ($8.84/hora)</p>
+          <p>Paquete de 25 horas: $200 - ($8/hora)</p>
           <h2>REGISTRO GRATIS</h2>
           <h4>(en la compra de tu primer paquete de tiempo, incluye 1 hora extra)</h4>
         </ol>
-            </div>
-      <div class="product" id="valve"><div class="level"><i class="em em-dark_sunglasses" aria-role="presentation" aria-label=""></i> ZONA A <i class="em em-dark_sunglasses" aria-role="presentation" aria-label=""></i></div>
+      </div>
+      <div class="product" id="valve">
+        <div class="level"><i class="em em-dark_sunglasses" aria-role="presentation" aria-label="Cool sunglasses"></i> ZONA A <i class="em em-dark_sunglasses" aria-role="presentation" aria-label="Cool sunglasses"></i></div>
         <h2>Para los más gamers.</h2>
         <ol>
-          <p>Paquete de 6 horas: $70 - 
-            ($11.66/hora)
-          </p>
-          <p>Paquete de 9 horas: $100 - 
-            ($11.11/hora) </p>
-          <p>Paquete de 13 horas: $135 - 
-            ($10.38/hora)
-          </p>
-          <p>Paquete de 25 horas: $230 - 
-            ($9,2/hora)
-          </p>
+          <p>Paquete de 6 horas: $70 - ($11.66/hora)</p>
+          <p>Paquete de 9 horas: $100 - ($11.11/hora)</p>
+          <p>Paquete de 13 horas: $135 - ($10.38/hora)</p>
+          <p>Paquete de 25 horas: $230 - ($9.2/hora)</p>
           <h2>REGISTRO GRATIS</h2>
           <h4>(en la compra de tu primer paquete de tiempo, incluye 1 hora extra)</h4>
           <p>Obtienes acceso a la zona A, la cual cuenta con equipos más avanzados.</p>
@@ -128,15 +108,233 @@ function showDivs(n) {
         </ol>
       </div>
     </section>
-<!-- social network links start -->
-<a href="https://www.facebook.com/WASD.Gaming" class="fa fa-facebook"></a>
-<a href="https://www.twitter.com/wasdgc" class="fa fa-twitter"></a>
-<a href="https://www.youtube.com/channel/UCCRoiTWifwqdfYbuzyJz_4g" class="fa fa-youtube"></a>
-<a href="https://www.instagram.com/wasdoriginals" class="fa fa-instagram"></a>
-<!-- social network links end -->
-<div class="map-header">
-    <h3 class="map-header-text">¡Encuéntranos con Google Maps!</h3>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15040.24422562147!2d-96.9231644!3d19.5389921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x945ad368200af9f!2sWASD%20Gaming%20Center!5e0!3m2!1ses-419!2ses!4v1578101405497!5m2!1ses-419!2ses" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" id="mapa"></iframe>
-</div>  
-</main>
-  
+
+    <!-- Social network links start -->
+    <section class="social-links">
+      <a href="https://www.facebook.com/WASD.Gaming" class="fa fa-facebook" aria-label="Facebook"></a>
+      <a href="https://www.twitter.com/wasdgc" class="fa fa-twitter" aria-label="Twitter"></a>
+      <a href="https://www.youtube.com/channel/UCCRoiTWifwqdfYbuzyJz_4g" class="fa fa-youtube" aria-label="YouTube"></a>
+      <a href="https://www.instagram.com/wasdoriginals" class="fa fa-instagram" aria-label="Instagram"></a>
+    </section>
+    <!-- Social network links end -->
+
+    <div class="map-header">
+      <h3 class="map-header-text">¡Encuéntranos con Google Maps!</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15040.24422562147!2d-96.9231644!3d19.5389921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x945ad368200af9f!2sWASD%20Gaming%20Center!5e0!3m2!1ses-419!2ses!4v1578101405497!5m2!1ses-419!2ses" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" id="mapa" aria-label="Mapa de ubicación"></iframe>
+    </div>
+
+  </main>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = x.length; }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+  <!-- Magic particles script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const body = document.body;
+      for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 10 + 's';
+        body.appendChild(particle);
+      }
+    });
+  </script>
+
+  <!-- Language Toggle Script -->
+  <script>
+    const translations = {
+      es: {
+        title: "WASD Gaming Center - Entretenimiento de Calidad para Gamers Xalapeños",
+        nav: {
+          home: "WASDGamingCenter",
+          rules: "Reglamento",
+          computers: "Computadoras",
+          community: "ComuniWASD"
+        },
+        header: {
+          welcome: ">Bienvenidx al sitio web de WASD",
+          subtitle: "Llevamos 5 años entregando entretenimiento de calidad a los gamers xalapeños."
+        },
+        videos: {
+          facilities: "v Conoce nuestras instalaciones v",
+          first: "^ Primer aniversario ^",
+          second: "v Segundo aniversario v"
+        },
+        slider: "Ven, juega y diviértete",
+        pricing: {
+          guests: "¡Invitados!",
+          general: "ZONA GENERAL",
+          vip: "ZONA A",
+          guestPrice: "$15 por hora",
+          generalDesc: "Obtén descuentos al comprar paquetes de tiempo que se añaden a tu cuenta",
+          vipDesc: "Para los más gamers.",
+          freeReg: "REGISTRO GRATIS",
+          freeRegDesc: "(en la compra de tu primer paquete de tiempo, incluye 1 hora extra)",
+          vipBenefits1: "Obtienes acceso a la zona A, la cual cuenta con equipos más avanzados.",
+          vipBenefits2: "Tienes derecho a reservar tu PC",
+          packages: {
+            p6: "Paquete de 6 horas: $60 - ($10/hora)",
+            p9: "Paquete de 9 horas: $85 - ($9.44/hora)",
+            p13: "Paquete de 13 horas: $115 - ($8.84/hora)",
+            p25: "Paquete de 25 horas: $200 - ($8/hora)",
+            vp6: "Paquete de 6 horas: $70 - ($11.66/hora)",
+            vp9: "Paquete de 9 horas: $100 - ($11.11/hora)",
+            vp13: "Paquete de 13 horas: $135 - ($10.38/hora)",
+            vp25: "Paquete de 25 horas: $230 - ($9.2/hora)"
+          },
+          guestList: [
+            "Juega pre-pago o pos-pago.",
+            "Participa en eventos y torneos.",
+            "La fracción es cada media hora.",
+            "El costo por media hora es de $8."
+          ]
+        },
+        map: "¡Encuéntranos con Google Maps!",
+        status: "WASD Gaming Center Current Status: OFF"
+      },
+      en: {
+        title: "WASD Gaming Center - Quality Entertainment for Xalapa Gamers",
+        nav: {
+          home: "WASDGamingCenter",
+          rules: "Rules",
+          computers: "Computers",
+          community: "ComuniWASD"
+        },
+        header: {
+          welcome: ">Welcome to WASD's website",
+          subtitle: "We have been delivering quality entertainment to Xalapa gamers for 5 years."
+        },
+        videos: {
+          facilities: "v Discover our facilities v",
+          first: "^ First anniversary ^",
+          second: "v Second anniversary v"
+        },
+        slider: "Come, play and have fun",
+        pricing: {
+          guests: "Guests!",
+          general: "GENERAL ZONE",
+          vip: "ZONE A",
+          guestPrice: "$15 per hour",
+          generalDesc: "Get discounts by purchasing time packages that are added to your account",
+          vipDesc: "For the most gamers.",
+          freeReg: "FREE REGISTRATION",
+          freeRegDesc: "(when purchasing your first time package, includes 1 extra hour)",
+          vipBenefits1: "You get access to zone A, which has more advanced equipment.",
+          vipBenefits2: "You have the right to reserve your PC",
+          packages: {
+            p6: "6-hour package: $60 - ($10/hour)",
+            p9: "9-hour package: $85 - ($9.44/hour)",
+            p13: "13-hour package: $115 - ($8.84/hour)",
+            p25: "25-hour package: $200 - ($8/hour)",
+            vp6: "6-hour package: $70 - ($11.66/hour)",
+            vp9: "9-hour package: $100 - ($11.11/hour)",
+            vp13: "13-hour package: $135 - ($10.38/hour)",
+            vp25: "25-hour package: $230 - ($9.2/hour)"
+          },
+          guestList: [
+            "Play pre-paid or post-paid.",
+            "Participate in events and tournaments.",
+            "The fraction is every half hour.",
+            "The cost per half hour is $8."
+          ]
+        },
+        map: "Find us with Google Maps!",
+        status: "WASD Gaming Center Current Status: OFF"
+      }
+    };
+
+    let currentLang = 'es';
+
+    function switchLanguage(lang) {
+      currentLang = lang;
+      document.title = translations[lang].title;
+
+      // Update nav
+      document.querySelector('.topnav a:nth-child(1)').textContent = translations[lang].nav.home;
+      document.querySelector('.topnav a:nth-child(2)').textContent = translations[lang].nav.rules;
+      document.querySelector('.topnav a:nth-child(3)').textContent = translations[lang].nav.computers;
+      document.querySelector('.topnav a:nth-child(4)').textContent = translations[lang].nav.community;
+
+      // Update header
+      document.getElementById('title').textContent = translations[lang].header.welcome;
+      document.getElementById('title').setAttribute('data-text', translations[lang].header.welcome);
+      document.getElementById('subtitle').textContent = translations[lang].header.subtitle;
+
+      // Update videos
+      document.querySelector('.vid-container:nth-child(1) p').textContent = translations[lang].videos.facilities;
+      document.querySelector('.vid-container:nth-child(2) p').textContent = translations[lang].videos.first;
+      document.querySelector('.vid-container:nth-child(3) p').textContent = translations[lang].videos.second;
+
+      // Update slider
+      document.querySelector('.slider-section h2').textContent = translations[lang].slider;
+
+      // Update pricing
+      const products = document.querySelectorAll('.product');
+      // Guests
+      products[0].querySelector('.level').textContent = translations[lang].pricing.guests;
+      products[0].querySelector('h2').textContent = translations[lang].pricing.guestPrice;
+      const guestLis = products[0].querySelectorAll('li');
+      translations[lang].pricing.guestList.forEach((item, index) => {
+        if (guestLis[index]) guestLis[index].textContent = item;
+      });
+
+      // General
+      products[1].querySelector('.level').textContent = translations[lang].pricing.general;
+      products[1].querySelector('h2').textContent = translations[lang].pricing.generalDesc;
+      const generalPs = products[1].querySelectorAll('ol p');
+      generalPs[0].textContent = translations[lang].pricing.packages.p6;
+      generalPs[1].textContent = translations[lang].pricing.packages.p9;
+      generalPs[2].textContent = translations[lang].pricing.packages.p13;
+      generalPs[3].textContent = translations[lang].pricing.packages.p25;
+      products[1].querySelector('h2:nth-of-type(2)').textContent = translations[lang].pricing.freeReg;
+      products[1].querySelector('h4').textContent = translations[lang].pricing.freeRegDesc;
+
+      // VIP
+      products[2].querySelector('.level').innerHTML = `<i class="em em-dark_sunglasses" aria-role="presentation" aria-label="Cool sunglasses"></i> ${translations[lang].pricing.vip} <i class="em em-dark_sunglasses" aria-role="presentation" aria-label="Cool sunglasses"></i>`;
+      products[2].querySelector('h2').textContent = translations[lang].pricing.vipDesc;
+      const vipPs = products[2].querySelectorAll('ol p');
+      vipPs[0].textContent = translations[lang].pricing.packages.vp6;
+      vipPs[1].textContent = translations[lang].pricing.packages.vp9;
+      vipPs[2].textContent = translations[lang].pricing.packages.vp13;
+      vipPs[3].textContent = translations[lang].pricing.packages.vp25;
+      vipPs[4].textContent = translations[lang].pricing.vipBenefits1;
+      vipPs[5].textContent = translations[lang].pricing.vipBenefits2;
+      products[2].querySelector('h2:nth-of-type(2)').textContent = translations[lang].pricing.freeReg;
+      products[2].querySelector('h4').textContent = translations[lang].pricing.freeRegDesc;
+
+      // Update map
+      document.querySelector('.map-header-text').textContent = translations[lang].map;
+
+      // Update status
+      document.querySelector('.status-banner p').textContent = translations[lang].status;
+
+      // Update button states
+      document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+      document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+    }
+
+    document.getElementById('lang-es').addEventListener('click', () => switchLanguage('es'));
+    document.getElementById('lang-en').addEventListener('click', () => switchLanguage('en'));
+  </script>
+
+</body>
+</html>
